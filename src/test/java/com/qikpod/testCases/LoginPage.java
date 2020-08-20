@@ -22,7 +22,7 @@ public class LoginPage extends BaseClass {
 		driver=Capabilities();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		
-		driver.findElement(By.xpath("//android.widget.EditText[@text='enter phone number']")).sendKeys("9482779997");
+		driver.findElement(By.xpath("//android.widget.EditText[@text='enter phone number']")).sendKeys("8892486148");
 		driver.findElement(By.xpath("//android.view.ViewGroup[3]")).click();
 		Thread.sleep(10000);
 		String el =driver.findElementsByXPath("//android.widget.TextView[3]").get(1).getText();
@@ -31,6 +31,7 @@ public class LoginPage extends BaseClass {
 		driver.findElementByXPath("//android.widget.EditText[@text='Enter AWB number or Pod ID']").sendKeys(el);
 		driver.findElementByXPath("android.widget.TextView[@text='Submit']").click();
 		driver.findElementByXPath("//android.view.ViewGroup[3]").click();
+		
 		
 		
 		
